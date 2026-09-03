@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Nova Senha</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="container">
+
+            <!-- LADO ESQUERDO -->
+            <div class="esquerda">
+                <div class="logo-titulo">
+
+                    <img class="logo" src="Logomarca Roxo_500x150_px.png" alt="Logomarca">
+
+                    <h1>Criar nova senha</h1>
+
+                    <form class="form-login" action="do.login.html" method="POST">
+
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="senha">Senha:</label>
+                                <input type="password" name="senha" placeholder="Sua senha" id="senha">
+                                <p id="mensagem-senha"></p> <!--Chamada para JS-->
+                            </div>
+
+                            <div class="campo">
+                                <label for="confirma-senha">Confirme a senha:</label>
+                                <input type="password" name="confirma-senha" placeholder="Sua senha" id="confirmar-senha">
+                                <p id="mensagem-confirmar-senha"></p> <!--Chamada para JS-->
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>A senha deve ter no mínimo 8 caracteres</li>
+                            <li>Letras minúsculas (a,b,c...)</li>
+                            <li>Letras maiúsculas (A,B,C...)</li>
+                            <li>Números (1,2,3...)</li>
+                            <li>Caracteres especiais (&,@,#,!...)</li>
+                        </ul>
+
+                        <hr>
+
+                        <label><input type="checkbox" id="termos" name="aceite"> Li e concordo com os Termos de Uso e Política de Privacidade.</label>
+                        <label><input type="checkbox" id="notificacao" name="notificacoes"> Concordo em receber notificações e atualizações.</label>
+
+                        <input type="submit" id="btnCriarSenha" value="Criar" class="botao-criar">
+
+                    </form>
+                </div>
+            </div>
+
+            <!-- LADO DIREITO -->
+            <div class="lateral">
+                <img src="Imagem_lateral.jpeg" alt="Painel Lateral" class="imagem-lateral">
+            </div>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

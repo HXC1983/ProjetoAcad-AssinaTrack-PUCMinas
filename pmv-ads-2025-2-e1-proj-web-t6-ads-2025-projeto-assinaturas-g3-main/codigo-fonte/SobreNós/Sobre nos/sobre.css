@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header * {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: #fff;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 1rem 1.5rem;
+}
+
+.navbar nav ul li a:hover {
+  font-size: 1.3rem;
+  border-bottom: #3a225b solid 5px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.navbar nav ul li a.active {
+  color: #000;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.perfil-btn {
+  padding: 10px 20px;
+  background-color: #6f2dbd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.gradient-bar {
+  background: linear-gradient(90deg, #5b0076, #b6332d);
+  height: 70px;
+}
+
+.hero-banner {
+  background-color: #FFFFFF;
+  padding: 50px 50px;
+  position: relative;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+.hero-banner h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: italic;
+  color: #2e1a47;
+  margin: 0;
+}
+
+.main-content {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.intro-section {
+  margin-bottom: 50px;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.8;
+}
+
+.history-section {
+  background: linear-gradient(135deg, #4a148c, #d84315);
+  padding: 40px;
+  margin: 0 auto 60px auto;
+  color: #fff;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(216, 67, 21, 0.15);
+}
+
+.history-section h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.history-section p {
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+.mvv-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.mvv-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.mvv-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mvv-card h3 {
+  font-size: 1.5rem;
+  color: #2e1a47;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.mvv-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.diferenciais-section {
+  background: linear-gradient(135deg, #4a148c, #d84315);
+  padding: 80px 0;
+  color: #fff;
+}
+
+.diferenciais-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diferenciais-section h2::before {
+  content: '💬';
+  margin-right: 15px;
+  font-size: 2.5rem;
+}
+
+.diferenciais-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.diferenciais-list li {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-close-x {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: #6f2dbd;
+  color: white;
+  text-decoration: none;
+}
+
+.modal-btn.primary {
+  background: #6f2dbd;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-banner h1 {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    padding: 0 20px;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .navbar nav ul {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .history-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mvv-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mvv-card {
+    width: 100%;
+    max-width: none;
+  }
+}

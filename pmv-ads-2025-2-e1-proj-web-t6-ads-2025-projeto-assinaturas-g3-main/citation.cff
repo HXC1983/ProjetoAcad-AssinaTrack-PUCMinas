@@ -1,0 +1,31 @@
+message: Please cite this software using these metadata.
+title: Assinatrack
+authors:
+  - family-names: Barbosa Nogueira
+    given-names: Arthur 
+  - family-names: Wesley dos Santos Marques Ferreira
+    given-names: Douglas
+  - family-names: Yasmin de Souza Araújo
+    given-names: Ellen
+  - family-names: Martins Pinto Coelho
+    given-names: Gabriel
+  - family-names: Xavier de Castro
+    given-names: Hugo
+  - family-names: Caire da Silva
+    given-names: Rafael
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Nepomuceno Curto
+    given-names: Hayala 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+keywords:
+  - Assinaturas
+  - Controle
+  - Economia
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e1-proj-web-t6-ads-2025-projeto-assinaturas-g3/tree/main
+version: 1.0.0
+
+date-released: 2025-12-07

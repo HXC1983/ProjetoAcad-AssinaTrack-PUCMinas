@@ -1,0 +1,304 @@
+/* --------------------------------------------------------- */
+/*  VARIÁVEIS DO SITE                                        */
+/* --------------------------------------------------------- */
+
+:root{
+  --roxo-dark: #5d3f9f;
+  --roxo-medium:#550C65;
+  --orange:#9E3438;
+  --bg:#ffffff;
+  --muted:#f7f7f7;
+  --text:#222;
+  --accent:#f6b82c;
+  --max-width:1100px;
+}
+
+/* --------------------------------------------------------- */
+/*  RESET                                                    */
+/* --------------------------------------------------------- */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------------------------------- */
+/*                    NavBar Padrão                          */
+/* --------------------------------------------------------- */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a.active,
+.navbar nav ul li a:hover {
+  color: #000;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.perfil-btn {
+  padding: 10px 20px;
+  background-color: #6f2dbd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Barra degradê */
+.gradient-bar {
+  background: linear-gradient(90deg, #5b0076, #b6332d);
+  height: 130px; /* mantendo o estilo da segunda imagem */
+  width: 100%;
+}
+
+/* --------------------------------------------------------- */
+/*  CONTAINER PRINCIPAL                                      */
+/* --------------------------------------------------------- */
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 20px auto 5%; 
+  position: relative;
+  z-index: 5;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.topbar h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.descricao{ 
+  color:#666;
+  font-size: 0.95rem;
+}
+
+.resume-mes {
+  width: 30%;
+  min-width: 200px;
+  text-align: right;
+}
+
+.resume-mes label{
+  display: block;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+#valor-aberto{
+  display: inline-block;
+  width: 70%;
+  text-align: right;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------- */
+/*  LISTAS                                                   */
+/* --------------------------------------------------------- */
+
+.lista-section {
+  margin-bottom: 2%;
+}
+
+.lista-section summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
+/* Notificação Box */
+.notificacao {
+  background: var(--muted);
+  border-radius: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 1% 0;
+  display: flex;
+  gap: 2%;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+/* Info */
+.info{
+  width: 75%;
+}
+
+.info h3{
+  margin-top: 0%;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--roxo-dark);
+}
+
+/* Campos */
+.campos{
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.field{
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+.field label{
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field input, .field select{
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  font-size: 0.9rem;
+  height: 40px;
+}
+
+/* --------------------------------------------------------- */
+/*  AÇÕES (CHECK DE PAGO)                                    */
+/* --------------------------------------------------------- */
+
+.actions {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.actions label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.actions input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* --------------------------------------------------------- */
+/*  EXPORTAR                                                 */
+/* --------------------------------------------------------- */
+
+.exportar-btn {
+  padding: 8px 12px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 4%;
+}
+
+/* --------------------------------------------------------- */
+/*  RESPONSIVIDADE                                           */
+/* --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .resume-mes{
+    width:40%;
+  }
+
+  .field{
+    width:45%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-mes {
+    width: 100%;
+    text-align: left;
+    margin-top: 12px;
+  }
+
+  .notificacao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .field{
+    min-width: 48%;
+  }
+
+  .info{
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações de Lembrete</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="config.css">
+</head>
+<body>
+
+    <div class="config-card">
+        <div class="header-area">
+            <a href="index.html" class="btn-voltar">← Voltar</a>
+            <h1>Configurações de Lembrete</h1>
+            <p style="color: #777; font-size: 0.9rem;">Personalize como e quando te avisamos.</p>
+        </div>
+
+        <form id="configForm">
+            <label>Antecedência do aviso</label>
+            <div class="input-dias-wrapper">
+                <input type="number" id="antecedencia" min="1" max="60" value="3">
+                <span style="color: #555;">dias antes do vencimento.</span>
+            </div>
+
+            <label>Onde enviar o lembrete?</label>
+            <div class="radio-options">
+                <label class="radio-label">
+                    <input type="radio" name="localLembrete" value="email" checked>
+                    <span>E-mail</span>
+                </label>
+                
+                <label class="radio-label">
+                    <input type="radio" name="localLembrete" value="browser">
+                    <span>Notificação no Navegador</span>
+                </label>
+                
+                <label class="radio-label">
+                    <input type="radio" name="localLembrete" value="whatsapp">
+                    <span>WhatsApp</span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-salvar">Salvar Alterações</button>
+            <p id="mensagemStatus"></p>
+        </form>
+    </div>
+
+    <script src="config.js"></script>
+</body>
+</html>

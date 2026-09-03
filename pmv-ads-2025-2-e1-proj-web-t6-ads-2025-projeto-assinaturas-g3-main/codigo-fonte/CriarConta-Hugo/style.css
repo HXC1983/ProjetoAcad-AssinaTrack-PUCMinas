@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Poppins;
+  src: url(Fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+/* --- CONTAINER PRINCIPAL --- */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* --- COLUNA ESQUERDA --- */
+.esquerda {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* bloco logo + título */
+.logo-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80%;
+  max-width: 220px;
+  height: auto;
+}
+
+.logo-titulo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+}
+
+/* --- FORMULÁRIO --- */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* inputs */
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000; /* COR DE TEXTO CORRIGIDA */
+}
+
+input[name="email"] {
+  width: 49%;
+}
+
+.linha {
+  display: flex;
+  gap: 20px;
+}
+
+ul {
+  color: gray;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+hr {
+  color: #ccc;
+  width: 100%;
+}
+
+/* BOTÃO CRIAR */
+.botao-criar {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 50%;
+  margin: 10px auto;
+  cursor: pointer;
+  display: block;
+  background-color: blueviolet;
+  color: #ffffff;
+  border: none; /* Remoção da borda cinza */
+  transition: 0.3s ease;
+}
+
+.botao-criar:hover:enabled {
+  background-color: #7b31d7;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+/* --- COLUNA DIREITA --- */
+.lateral {
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.imagem-lateral {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  object-fit: cover; /* Evita distorção da imagem */
+}
+

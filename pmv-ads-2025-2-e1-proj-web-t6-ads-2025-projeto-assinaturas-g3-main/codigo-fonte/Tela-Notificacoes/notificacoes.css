@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  width: 85%;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.descricao {
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.top-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-section select,
+.top-section input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.label-total {
+  font-weight: 600;
+}
+
+.category {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.arrow {
+  transition: 0.2s;
+}
+
+.category-content {
+  margin-top: 15px;
+  display: none;
+}
+
+.category-content.open {
+  display: block;
+}
+
+.subscription-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card-left span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.fields {
+  display: flex;
+  gap: 25px;
+  margin-top: 8px;
+}
+
+.fields div {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields label {
+  font-size: 13px;
+  color: #a00;
+}
+
+.fields input {
+  padding: 6px 10px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.checkStatus {
+  width: 20px;
+  height: 20px;
+}

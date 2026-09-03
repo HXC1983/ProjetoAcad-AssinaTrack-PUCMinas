@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*---------------------------------------------*/
+/*            Configurações Gerais             */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.config-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    animation: slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-area {
+    margin-bottom: 30px;
+}
+/*/--------------------------------------------*/
+/*                Barra de Navegação           */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a.active,
+.navbar nav ul li a:hover {
+  color: #000;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.perfil-btn {
+  padding: 10px 20px;
+  background-color: #6f2dbd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.gradient-bar {
+  background: linear-gradient(90deg, #5b0076, #b6332d);
+  height: 70px;
+}
+
+/*---------------------------------------------*/
+/*      Botões e Inputs de Configuração        */
+
+.btn-voltar {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn-voltar:hover {
+    color: #6f2dbd;
+}
+
+h1 {
+    color: #3a225b;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+    color: #444;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.input-dias-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.input-dias-wrapper:hover {
+    border-color: #dcc0f0;
+    background: #fff;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3a225b;
+    font-weight: bold;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #6f2dbd;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.radio-label:hover {
+    background-color: #fcf5ff;
+    border-color: #dcc0f0;
+    transform: scale(1.01);
+}
+
+.radio-label input {
+    margin-right: 15px;
+    accent-color: #6f2dbd;
+    width: 18px;
+    height: 18px;
+}
+
+.btn-salvar {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    background: linear-gradient(135deg, #6f2dbd, #3a225b);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(111, 45, 189, 0.3);
+}
+
+.btn-salvar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(111, 45, 189, 0.4);
+}
+
+.btn-salvar:active {
+    transform: translateY(1px);
+}
+
+#mensagemStatus {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    height: 20px;
+}

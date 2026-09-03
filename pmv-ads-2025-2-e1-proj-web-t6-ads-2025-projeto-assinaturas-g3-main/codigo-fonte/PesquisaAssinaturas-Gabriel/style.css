@@ -1,0 +1,251 @@
+:root {
+  --roxo-dark: #5d3f9f;
+  --roxo-medium: #550c65;
+  --orange-primary: #9e3438;
+  --orange-secondary: #b44f2d;
+  --text-color: black;
+  --light-gray: #f4f4f4;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+--------------------------------------------
+  
+
+
+  /*-----------------------------------------------------------------------*/
+  /*                            BOTÃO PERFIL                               */
+  /*-----------------------------------------------------------------------*/
+
+
+
+  .perfil-btn {
+  background: linear-gradient(
+    90deg,
+    var(--roxo-dark),
+    var(--roxo-medium),
+    var(--orange-primary)
+  );
+  color: var(--white);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.perfil-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                              MAIN                                     */
+/*-----------------------------------------------------------------------*/
+
+main {
+  width: 100%;
+  padding: 80px 50px;
+  background-color: #8e6fd1;
+  margin-top: 30px;
+}
+main h1 {
+  margin-bottom: 70px;
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  background-color: #5d3f9f;
+  border-radius: 15px;
+  width: 300px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border: #1a0053 solid 5px;
+}
+
+.content .logo-ass {
+  width: 220px;
+  height: 250px;
+  border-radius: 15px;
+}
+.content .name-ass {
+  color: white;
+  font-size: 1.8rem;
+}
+.content .btn-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  background-color: #1a0053;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35), 0 3px 6px rgba(26, 0, 83, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.content .btn-link:hover {
+  padding: 20px 30px;
+  font-size: 2rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45), 0 4px 10px rgba(26, 0, 83, 0.6);
+}
+
+.content .valor {
+  color: white;
+  font-size: 1.6rem;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                         RODAPÉ                                        */
+/*-----------------------------------------------------------------------*/
+
+.main-footer {
+  background-color: var(--roxo-dark);
+  color: var(--white);
+  padding: 60px 20px 30px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Seção de contato --- */
+.contato {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.contato h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.contato p {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.subscribe-form input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.assinar {
+  background-color: var(--white);
+  color: var(--roxo-dark);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.assinar:hover {
+  background-color: #ece6ff;
+}
+
+/* --- Termos --- */
+.Termo {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.9em;
+  text-align: left;
+  max-width: 400px;
+  color: #eaeaea;
+}
+
+.Termo input[type="checkbox"] {
+  min-width: 18px;
+  min-height: 18px;
+  cursor: pointer;
+}
+
+/* --- Links --- */
+.Links {
+  display: none;
+}
+
+.Links ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.Links ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+
+.Links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* --- Redes sociais --- */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.redes-sociais a img {
+  width: 26px;
+  height: 26px;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.redes-sociais a:hover img {
+  transform: translateY(-4px);
+}
+
+/* --- Copyright --- */
+.copyright {
+  font-size: 0.85em;
+  opacity: 0.8;
+  margin-top: 10px;
+}

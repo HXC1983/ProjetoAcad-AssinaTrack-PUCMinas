@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Header sem barra/header.css" />
+
+    <title>Assinatrack</title>
+  </head>
+  <body>
+    <header>
+      <div id="header"></div>
+    </header>
+    <main>
+      <h1 class="title">Principais Assinaturas</h1>
+
+      <div class="container"></div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="contato">
+        <h2>Entre em Contato</h2>
+        <p></p>
+        <form action="/Cadastro" method="post" class="subscribe-form">
+          <input
+            type="email"
+            name="Email"
+            id="Caixa_do_email"
+            placeholder="Email"
+            required
+          />
+          <div class="Termo">
+            <input type="checkbox" name="termo" id="termo" required />
+            <label for="termo"
+              >Eu confirmo ser maior de 16 anos e concordo com os Termos e
+              Condições e Política de Privacidade.
+            </label>
+          </div>
+          <button type="submit" class="assinar">Assine Agora</button>
+        </form>
+      </div>
+
+      <div class="Links">
+        <ul>
+          <li><a href="/termo">Termo de serviços</a></li>
+          <li><a href="/Privacidade">Política de privacidade</a></li>
+          <li><a href="/Ajuda">Ajuda FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="redes-sociais">
+          <a href="https://facebook.com"
+            ><img src="facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="instagram.svg" alt="Instagram"
+          /></a>
+          <a href="https://linkedin.com"
+            ><img src="linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 AssinaTrack Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="/Header sem barra/header.js"></script>
+  </body>
+</html>

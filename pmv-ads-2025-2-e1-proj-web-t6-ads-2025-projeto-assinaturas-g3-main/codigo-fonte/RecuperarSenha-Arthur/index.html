@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- versão html -->
+<html lang="en"> <!-- documento -->
+<head> <!-- cabeça do documento informações técnicas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recuperar Senha</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head> <!-- cabeça do documento informações técnicas -->
+
+<body> <!-- corpo -->
+    <div class="container">
+        <header> <!-- cabeçalho visível -->
+                <a href="http://127.0.0.1:5500/codigo-fonte/Login-Douglas/Login.html"><img class="logo" src ="logoassinatrack.png" alt="Logomarca"></a>
+            </header> <!-- cabeçalho visível -->
+        <div class="left">
+            <main class="campos">
+                <dl>  
+                    <dt><h1 class="tituloc">Recuperar Senha</h1></dt>
+                    <div class="recuperar">
+                        <form action="#" method="post" class="form-recuperar">
+                            <dd><label for="email">Digite um e-mail para recuperação de senha</label></dd>
+                            <dd><input type="email" id="email" name="email" placeholder="Digite seu e-mail" required></dd>
+                            <p id="mensagemRec"></p>
+                            <br>
+                            <br>
+                            <dt><button id="botao" type="submit">Enviar</button></dt>
+                        </form>
+                    </div>
+                </dl>
+            </main>
+        </div>
+
+        <div class="right"><img class="right" src ="barra.png" alt="Image"></div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body> <!-- corpo -->
+</html> <!-- documento --> 

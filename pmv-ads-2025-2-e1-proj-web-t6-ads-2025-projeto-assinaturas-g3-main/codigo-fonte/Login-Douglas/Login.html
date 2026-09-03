@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="logo">
+          <a href="/codigo-fonte/Home-Gabriel/home.html">
+            <img
+              src="/imagens/logoassinatrack.png"
+              width="350"
+              height="170"
+              alt="Logo-AssinaTrack"
+            />
+          </a>
+        </div>
+
+        <div class="login-box">
+          <h1>Bem Vindo(a)!</h1>
+          <p>Entre com suas credenciais</p>
+
+          <form onsubmit="entrar(); return false;">
+            <label id="emailLabel" for="email_login">Email</label>
+            <input
+              type="email"
+              id="email_login"
+              placeholder="Entre com seu e-mail"
+              required
+            />
+
+            <div class="senha-container">
+              <label id="senhaLabel" for="senha_login">Senha</label>
+              <a href="/codigo-fonte/RecuperarSenha-Arthur/index.html"
+                >Esqueci a senha</a
+              >
+            </div>
+
+            <div class="input-senha-wrapper">
+              <input
+                type="password"
+                id="senha_login"
+                placeholder="Senha"
+                required
+              />
+
+              <img
+                id="toggleSenha"
+                class="toggleSenhaIcon"
+                src="https://cdn-icons-png.flaticon.com/512/159/159604.png"
+                alt="Mostrar senha"
+              />
+            </div>
+
+            <div id="msgError" class="msgError"></div>
+
+            <button type="submit">Entrar</button>
+          </form>
+
+          <p class="register-text">
+            Não tem uma conta?
+            <a href="/codigo-fonte/CriarConta-Hugo/index.html">Cadastre-se</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="icons">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+            alt="Instagram"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+            alt="YouTube"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174872.png"
+            alt="Spotify"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
+            alt="Apple"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/281/281764.png"
+            alt="Google"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png"
+            alt="X (Twitter)"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2504/2504929.png"
+            alt="Netflix"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

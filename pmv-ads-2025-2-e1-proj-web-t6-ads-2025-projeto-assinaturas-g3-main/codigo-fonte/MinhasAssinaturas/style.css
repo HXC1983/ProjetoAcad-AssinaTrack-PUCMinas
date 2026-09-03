@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  padding: 40px 80px;
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-input,
+.add-btn {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-btn {
+  cursor: pointer;
+  background-color: #eee;
+  transition: background 0.18s;
+}
+
+.add-btn:hover {
+  background-color: #ddd;
+}
+
+.valor-total {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.valor-total input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 110px;
+  font-weight: 600;
+}
+
+.category {
+  margin-top: 34px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 18px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.category-header .arrow {
+  transition: transform 0.25s ease;
+  transform: rotate(0deg);
+}
+
+.category-content {
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.subscription-card {
+  margin-top: 12px;
+  padding: 18px 22px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.subscription-card .card-left {
+  flex: 1;
+}
+
+.subscription-card span {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.subscription-card .fields {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.subscription-card label {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.subscription-card input[type="text"],
+.subscription-card input[type="number"] {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  background: #f3f3f3;
+  color: #333;
+  width: 100%;
+}
+
+.subscription-card input[disabled] {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #333;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 20px;
+}
+
+.icons i {
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.15s ease;
+}
+
+.icons i:hover {
+  transform: scale(1.18);
+}
+
+.icons .edit:hover {
+  color: #6f2dbd;
+}
+
+.icons .delete:hover {
+  color: #d62828;
+}
+
+.edit:hover {
+  color: #6f2dbd;
+}
+
+.delete:hover {
+  color: #d62828;
+}
+
+.sub-open {
+  animation: slideDown 0.28s ease forwards;
+}
+
+.sub-close {
+  animation: slideUp 0.28s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  width: 420px;
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-8px);
+  animation: modalShow 0.28s ease forwards;
+}
+
+@keyframes modalShow {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.modal-content label {
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.modal-content input,
+.modal-content select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.modal-buttons button {
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#cancelar,
+#cancelar-editar {
+  background: #e0e0e0;
+}
+#salvar,
+#salvar-editar {
+  background: #6f2dbd;
+  color: #fff;
+}
+.icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icons .edit:hover {
+  color: #6f2dbd;
+  transform: scale(1.14);
+}
+
+.icons .delete:hover {
+  color: #d62828;
+  transform: scale(1.14);
+}
+.search-api-btn {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+
+.search-api-btn:hover {
+  background: #eee;
+}
+
+/* ------------------------- */
+/* BOTÃO EXPORTAR RELATÓRIOS */
+/* ------------------------- */
+
+.exportar-area {
+  margin-top: 40px;
+}
+
+.exportar-relatorios-btn {
+  padding: 12px 20px;
+  background: #6f2dbd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exportar-relatorios-btn:hover {
+  background: #5b23a1;
+}
+
+/* ------------------------- */
+/* MODAL EXPORTAÇÃO */
+/* ------------------------- */
+
+.modal-content p {
+  margin: 10px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn.excel {
+  background: #1f8f3d;
+  margin-right: 10px;
+}
+
+.btn.pdf {
+  background: #c62828;
+}
+
+.close-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #ccc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.close-btn:hover {
+  background: #b9b9b9;
+}
+
+/* Modal exportar relatórios */
+#modalExportar.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalExportar {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modalExportar.show {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -1,0 +1,97 @@
+.main-footer {
+  background: #3a225b;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-top h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-top p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-form input[type="email"] {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.footer-check {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.footer-form button {
+  padding: 12px 30px;
+  background: #a59fc1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.footer-form button:hover {
+  opacity: 0.8;
+}
+
+.footer-divider {
+  margin: 40px auto;
+  width: 80%;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links li:hover {
+  opacity: 0.8;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.7;
+}

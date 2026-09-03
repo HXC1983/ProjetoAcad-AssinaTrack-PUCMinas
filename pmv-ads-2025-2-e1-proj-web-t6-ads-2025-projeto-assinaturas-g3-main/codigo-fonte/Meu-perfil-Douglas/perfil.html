@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="perfil.css" />
+    <link rel="stylesheet" href="/Header com barra/header.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header"></div>
+    </header>
+
+    <main class="perfil-container">
+      <h1>Meu perfil <span class="editar">✏️</span></h1>
+
+      <div class="perfil-content">
+        <div class="perfil-left">
+          <div class="avatar-wrapper" id="avatarWrapper">
+            <img id="fotoPerfil" src="" alt="Avatar" style="display: none" />
+            <div class="avatar-placeholder">👤</div>
+          </div>
+
+          <input
+            type="file"
+            id="fotoInput"
+            accept="image/*"
+            style="display: none"
+          />
+          <h2 id="nomeDisplay">Seu Nome</h2>
+
+          <div class="painel-conclusao">
+            <h3>🎯 Conclusão do Perfil</h3>
+
+            <div class="progresso-container">
+              <div class="progresso-barra">
+                <div class="progresso" id="progressoPerfil"></div>
+              </div>
+              <p id="porcentagemPerfil">Seu perfil está 0% completo</p>
+            </div>
+
+            <ul class="checklist-perfil">
+              <li id="check-foto">📸 Foto de perfil</li>
+              <li id="check-nome">🧍 Nome completo</li>
+              <li id="check-email">📧 E-mail</li>
+              <li id="check-telefone">📱 Telefone</li>
+              <li id="check-endereco">🏠 Endereço</li>
+            </ul>
+          </div>
+
+          <div class="acoes">
+            <button class="acao deletar" id="deletarContaBtn">
+              🗑️ Deletar conta
+            </button>
+            <button class="acao sair" id="sairContaBtn">
+              🚪 Sair da conta
+            </button>
+          </div>
+        </div>
+
+        <div class="perfil-right">
+          <div class="form-group">
+            <label>Nome completo</label>
+            <input type="text" id="nome" placeholder="Seu nome completo" />
+          </div>
+
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="Seu e-mail" />
+          </div>
+
+          <div class="form-group">
+            <label>Telefone</label>
+            <input type="text" id="telefone" placeholder="(00) 00000-0000" />
+          </div>
+
+          <div class="form-group">
+            <label>Endereço</label>
+            <input type="text" id="endereco" placeholder="Seu endereço" />
+          </div>
+
+          <button id="salvarBtn" class="salvar">Salvar alterações</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="perfil.js"></script>
+    <script src="/Header com barra/header.js"></script>
+  </body>
+</html>

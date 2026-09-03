@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crie sua conta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Coluna esquerda: logo + título + formulário -->
+        <div class="esquerda">
+          <div class="logo-titulo">
+            <a href="/codigo-fonte/Home-Gabriel/home.html"
+              ><img
+                class="logo"
+                src="/imagens/logoassinatrack.png"
+                alt="Logomarca"
+            /></a>
+            <h1>Crie sua conta</h1>
+          </div>
+
+          <form class="form-login" action="do.login.html" method="POST">
+            <div class="linha">
+              <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input
+                  type="text"
+                  name="nome_completo"
+                  placeholder="Nome completo"
+                  id="nome"
+                />
+                <p id="mensagem-nome"></p>
+              </div>
+              <div class="campo">
+                <label for="tel">Telefone:</label>
+                <input
+                  type="text"
+                  name="telefone"
+                  placeholder="(00)00000-0000"
+                  id="telefone"
+                />
+                <p id="mensagem-telefone"></p>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="email">E-mail:</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="Seu e-mail"
+                class="email"
+                id="email"
+              />
+              <p id="mensagem-email"></p>
+            </div>
+
+            <div class="linha">
+              <div class="campo">
+                <label for="senha">Senha:</label>
+                <input
+                  type="password"
+                  name="senha"
+                  placeholder="Sua senha"
+                  id="senha"
+                />
+                <p id="mensagem-senha"></p>
+              </div>
+              <div class="campo">
+                <label for="confirma-senha">Confirme a senha:</label>
+                <input
+                  type="password"
+                  name="confirmar_senha"
+                  placeholder="Sua senha"
+                  id="confirmar-senha"
+                />
+                <p id="mensagem-confirmar-senha"></p>
+              </div>
+            </div>
+
+            <ul>
+              <li>A senha deve ter no mínimo 8 caracteres</li>
+              <li>Letras minúsculas (a,b,c...)</li>
+              <li>Letras maiúsculas (A,B,C...)</li>
+              <li>Números (1,2,3...)</li>
+              <li>Caracteres especiais (&,@,#,!...)</li>
+            </ul>
+
+            <hr />
+
+            <label
+              ><input type="checkbox" id="termos" name="aceite" /> Li e concordo
+              com os Termos de Uso e Política de Privacidade.</label
+            >
+            <label
+              ><input type="checkbox" id="notificacao" name="notificacoes" />
+              Concordo em receber notificações e atualizações.</label
+            >
+
+            <input
+              type="submit"
+              id="btnCriarConta"
+              value="Criar"
+              class="botao-criar"
+            />
+          </form>
+        </div>
+
+        <!-- Coluna direita -->
+        <div class="lateral">
+          <img
+            src="/imagens/imagem-degrade.jpeg"
+            alt="Painel Lateral"
+            class="imagem-lateral"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

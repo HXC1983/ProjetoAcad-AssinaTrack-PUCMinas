@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notif.css">
+    <title>Notificações — AssinaTrack</title>
+  <link rel="stylesheet" href="Nav.css">
+  <script src="Nav.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main class="container">
+        <div class="topbar">
+            <div>
+                <h1>Notificações</h1>
+                <p class="descricao">Atenção! As notificações estão ordenadas por ordem de vencimento. Fique atento(a) nas datas</p>
+                <a href="config.html" class="btn-config">⚙️ Configurar Lembretes </a>
+
+            </div>
+            <div class="resumo-mes">
+                <label> Valor aberto do mês de 
+                    <select id="mes-select"></select>
+                </label>
+                <input id="valor-aberto" readonly/>
+            </div>
+        </div>
+
+        <section class="listas">
+            <details open class="lista-section">
+                <summary>Pendentes</summary>
+                <div id="pendentes" class="lista"></div>
+            </details>
+
+            <details open class="lista-section">
+                <summary>Pagos</summary>
+                <div id="pagos" class="lista"></div>
+            </details>
+        </section>
+
+        <section class="export-area">
+            <button id="export-btn">Exportar Relatório (JSON)</button>
+        </section>
+
+
+        <script src="notif.js"></script>
+    </main>
+</body>
+</html>
